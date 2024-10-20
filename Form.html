@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulir Penggemar Messi</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Formulir Penggemar Messi</h1>
+    </header>
+    <form action="/submit" method="GET">
+      <div class="form-group">
+        <label for="name">Nama</label>
+        <input type="text" class="form-control" id="name" name="name" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" class="form-control" id="email" name="email" required>
+      </div>
+      <div class="form-group">
+        <label for="favoriteMatch">Pertandingan Favorit</label>
+        <input type="text" class="form-control" id="favoriteMatch" name="favoriteMatch" required>
+      </div>
+      <div class="form-group">
+        <label for="birthdate">Tanggal Lahir</label>
+        <input type="date" class="form-control" id="birthdate" name="birthdate" required>
+      </div>
+      <div class="form-group">
+        <label>Jenis Kelamin</label><br>
+        <input type="radio" id="male" name="gender" value="male" required>
+        <label for="male">Laki-laki</label><br>
+        <input type="radio" id="female" name="gender" value="female" required>
+        <label for="female">Perempuan</label>
+      </div>
+      <div class="form-group">
+        <label for="favoriteClub">Klub Sepak Bola Favorit</label>
+        <select class="form-control" id="favoriteClub" name="favoriteClub" required>
+            <option value="">Pilih Klub</option>
+            <option value="barcelona">FC Barcelona</option>
+            <option value="psg">Paris Saint-Germain</option>
+            <option value="inter">Inter Milan</option>
+            <option value="manchester_united">Manchester United</option>
+            <option value="milan">AC Milan</option>
+        </select>
+      </div>
+      <button type="submit" class="btn btn-primary">Kirim</button>
+    </form>
+  </div>
+</body>
+</html>
